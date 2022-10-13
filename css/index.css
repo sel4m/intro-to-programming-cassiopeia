@@ -1,0 +1,97 @@
+@media screen and (min-width: 480px){
+    * {
+        background-color: rgb(26, 13, 37);
+        color: rgb(202, 164, 189);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+}
+
+
+
+@media screen and (max-width: 479px){
+    * {
+        background-color: rgb(6, 1, 28);
+        color: rgb(180, 153, 194);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+    }
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2, h3, h4 {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(214, 190, 208);
+}
+
+.about {
+    display: block;
+    margin: 20px;
+    padding: 5px;
+}
+
+.experience, #skills {
+    display: block; 
+    border: solid;
+    border-color: rgb(158, 128, 188);
+    border-radius: 10px;
+    margin: 20px;
+    margin-right: 70%;
+    padding: 10px;
+}
+
+.connect {
+    margin: 20px;
+    padding: 5px;
+}
+
+.leave-a-message {
+    margin: 20px;
+    padding: 5x;
+
+}
+
+.LeaveMessagePrompts {
+    font-size: 20px;
+    color: rgb(158, 128, 188);
+}
+
+input, textarea {
+    font-size: 15px;
+    padding: 10px;
+    border: solid;
+    border-color: rgb(202, 164, 189);
+}
+
+#first_name, #user_email {
+   margin-bottom: 20px;
+}
+
+button {
+   margin-top: 10px;
+   padding: 5px;
+   color: rgb(30, 16, 42);
+   background-color: rgb(158, 128, 188);
+
+}
+
+#messsages {
+    display: block;
+    background-color: rgb(202, 164, 189);
+    margin: 50px;;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+footer {
+    display: block;
+    color: rgb(26, 13, 37);
+    background-color: rgb(202, 164, 189);
+    margin: 50px;
+}

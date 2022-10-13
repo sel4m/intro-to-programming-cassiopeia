@@ -4,18 +4,19 @@
 <head>
     <title>Selam Yihew</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <section> 
         <h1>Selam Yihew</h1>
     </section>
 
-    <section> 
+    <section class="about"> 
         <h2>About</h2>
         <p>24 year old budding programmer // from the Bay Area, California (she/they) </p>
     </section>
 
-    <section>
+    <section class="experience">
         <h3>Experience</h3>
         <p>G{Code} House alum // currently learning at Code the Dream</p>
     </section>
@@ -25,7 +26,7 @@
         <ul></ul>
     </section>
 
-    <section>
+    <section class="connect">
         <h4>Connect</h4>
         <ul>
             <li><a href="mailto:syihew@gmail.com">Email</a></li>
@@ -34,14 +35,14 @@
         </ul>
     </section>
 
-    <section>
+    <section class="leave-a-message">
         <h2>Leave a Message</h2>
         <form method="post" action="" name="leave_message">
-            <label for="first_name">Name:</label><br>
+            <label class="LeaveMessagePrompts" for="first_name">Name:</label><br>
             <input type="text" id="first_name" name="name" required="true"><br>
-            <label for="user_email">Email Address:</label><br>
+            <label class="LeaveMessagePrompts" or="user_email">Email Address:</label><br>
             <input type="email" id="user_email" name="email" required="true"><br>
-            <label for="user_message">Message:</label><br>
+            <label class="LeaveMessagePrompts" for="user_message">Message:</label><br>
             <textarea name="message" cols="20" rows="2" required="true"></textarea><br>
             <button type="submit">Submit</button>
         </form>
