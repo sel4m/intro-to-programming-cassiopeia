@@ -20,11 +20,11 @@
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 45px;
 }
 
 h2, h3, h4 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     color: rgb(214, 190, 208);
 }
@@ -45,7 +45,9 @@ h2, h3, h4 {
     padding: 10px;
 }
 
+
 .connect {
+    font-size: 25px;
     margin: 20px;
     padding: 5px;
 }
@@ -89,6 +91,21 @@ button {
 
 }
 
+#first_name, #user_email {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(158, 128, 188);
+    font-size: 25px;
+    
+}
 footer {
     display: block;
     color: rgb(26, 13, 37);
