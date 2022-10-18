@@ -8,7 +8,7 @@ footer.appendChild(copyright)
 
 const skills = ["Javascript", "HTML", "CSS"]
 const skillsSection = document.getElementById("skills")
-const skillsList = document.querySelector("ul")
+const skillsList = document.getElementById("skillset")
 for (let i in skills) {
     let skill = document.createElement("li")
     skill.innerText = skills[i]
