@@ -7,13 +7,13 @@ copyright.innerHTML = `Selam ${thisYear}`
 footer.appendChild(copyright)
 
 const skills = ["Javascript", "HTML", "CSS"]
-const skillsSection = document.getElementById("skills")
+const skillsSection = document.querySelector("skills")
 const skillsList = document.getElementById("skillset")
 for (let i in skills) {
-    let skill = document.createElement("li")
-    skill.innerText = skills[i]
-    skillsList.appendChild(skill)
-}
+    const skill = document.createElement("li")
+     skill.innerText = skills[i]
+     skillsList.appendChild(skill)
+ }
 
 const messageForm = document.querySelector('[name="leave_message"]')
 messageForm.addEventListener("submit", (event)=>{ 
@@ -42,4 +42,21 @@ messageForm.addEventListener("submit", (event)=>{
     messageForm.reset()
 })
 
-    
+function handleResponse() {
+   
+    const repositories = JSON.parse(this.response)
+    //console.log(repositories)
+    const projectSection = document.getElementById("projects")
+    const projectList = projectSection.querySelector("ul")
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li")
+        project.innerText = repositories[i].name
+        projectList.appendChild(project)
+}
+}
+
+const githubRequest = new XMLHttpRequest()
+githubRequest.open("GET", "https://api.github.com/users/sel4m/repos")
+githubRequest.send()
+githubRequest.addEventListener("load", handleResponse)
