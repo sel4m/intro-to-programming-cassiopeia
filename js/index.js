@@ -42,9 +42,9 @@ messageForm.addEventListener("submit", (event)=>{
     messageForm.reset()
 })
 
-function handleResponse() {
+function handleResponse(repositories) {
    
-    const repositories = JSON.parse(this.response)
+   //const repositories = JSON.parse(this.response)
     //console.log(repositories)
     const projectSection = document.getElementById("projects")
     const projectList = projectSection.querySelector("ul")
@@ -56,7 +56,18 @@ function handleResponse() {
 }
 }
 
-const githubRequest = new XMLHttpRequest()
-githubRequest.open("GET", "https://api.github.com/users/sel4m/repos")
-githubRequest.send()
-githubRequest.addEventListener("load", handleResponse)
+// const githubRequest = new XMLHttpRequest()
+// githubRequest.open("GET", "https://api.github.com/users/sel4m/repos")
+// githubRequest.send()
+// githubRequest.addEventListener("load", handleResponse)
+
+function fetchData() {
+    fetch("https://api.github.com/users/sel4m/repos")
+    .then(response => response.json())
+    .then(repositoriesData => {
+        handleResponse(repositoriesData)
+    })
+}
+
+fetchData()
+
